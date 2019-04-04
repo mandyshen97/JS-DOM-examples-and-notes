@@ -1,8 +1,6 @@
 《JavaScript DOM 编程艺术（第2版）》笔记
 
-[TOC]
-
-# 第1章：JavaScript 简史
+# 1. 第1章：JavaScript 简史
 
 - JavaScript 的起源
 
@@ -16,7 +14,7 @@
 
 > 今天，几乎所有的浏览器都内置了对 DOM 的支持，只要遵循 DOM 标准，就可以放心大胆的去做。
 
-# 第2章：JavaScript 语法
+# 2. 第2章：JavaScript 语法
 
 - 语句
 
@@ -107,7 +105,7 @@
 
   > **宿主对象**：在Web应用中就是由浏览器提供的预定义对象。
 
-# 第3章：DOM
+# 3. 第3章：DOM
 
 DOM：
 
@@ -138,7 +136,7 @@ DOM：
 
 - `setAttribute`
 
-# 第4章：案例研究：JavaScript图片库
+# 4. 第4章：案例研究：JavaScript图片库
 
 介绍了 DOM 提供的几个新属性：
 
@@ -148,9 +146,9 @@ DOM：
 - `firstChild`
 - `lastChild`
 
-# 第5章：最佳实战
+# 5. 第5章：最佳实战
 
-## 平稳退化
+## 5.1. 平稳退化
 
 > **平稳退化**(graceful degradation)：正确使用 JavaScript 脚本，可以让访问者在他们的浏览器不支持 JavaScript 的情况下仍然能顺利地浏览你的网站。
 >
@@ -183,7 +181,7 @@ DOM：
 
   这样，即使 javascript 被禁止，这个链接也是可用的。
 
-## 渐进增强
+## 5.2. 渐进增强
 
 > **渐进增强**就是用一些额外的信息层去包裹原始数据。
 >
@@ -191,7 +189,7 @@ DOM：
 
 结构、样式、行为要分离。
 
-## 向后兼容
+## 5.3. 向后兼容
 
 - 对象检测
 
@@ -206,7 +204,7 @@ DOM：
 
   > 通过提取浏览器供应商提供的信息来解决向后兼容问题。
 
-## 性能考虑
+## 5.4. 性能考虑
 
 - 尽量少访问DOM和尽量减少标记
 - 合并和放置脚本
@@ -217,9 +215,9 @@ DOM：
   - JSMin(<http://javascript.crockford.com/jsmin.html>)
   - YUI Compressor
 
-# 第6章：案例研究：图片库改进版
+# 6. 第6章：案例研究：图片库改进版
 
-## 共享onload事件：`addLoadEvent()`函数
+## 6.1. 共享onload事件：`addLoadEvent()`函数
 
 需要多个函数都在页面加载时执行。addLoadEvent只有一个参数：打算在页面加载完毕时执行的函数的名字。
 
@@ -241,9 +239,9 @@ function addLoadEvent(func) {
 }
 ```
 
-# 第7章 动态创建标记
+# 7. 第7章 动态创建标记
 
-## 动态添加
+## 7.1. 动态添加
 
 > 注意：用`document.createElement`创建一个空白的p元素，想在p元素内部添加内容，实际上内容也是一个文本节点，所以应该`document.createTextNode`创建一个文本节点，再用`.appendChild`添加到p节点中。
 
@@ -263,7 +261,7 @@ window.onload = function () {
 }
 ```
 
-## 在现有元素后插入一个元素：insertAfter()函数
+## 7.2. 在现有元素后插入一个元素：insertAfter()函数
 
 ```javascript
 function insertAfter(newElement, targetElement) {
@@ -276,13 +274,13 @@ function insertAfter(newElement, targetElement) {
 }
 ```
 
-# 第8章：充实文档的内容
+# 8. 第8章：充实文档的内容
 
 - 把文档里的缩略语显示为一个“缩略语列表”
 - 为文档里引用的每段文献节选生成一个“文献来源链接”
 - 把文档所支持的快捷键线是位于分“快捷键清单”
 
-# 第9章：CSS-DOM
+# 9. 第9章：CSS-DOM
 
 给一个元素追加新的 class:
 
@@ -299,7 +297,7 @@ function addClass(element,value) {
 }
 ```
 
-# 第10章 ：用JavaScript实现动画效果
+# 10. 第10章 ：用JavaScript实现动画效果
 
 - 位置position
   - static
@@ -313,11 +311,11 @@ function addClass(element,value) {
 
 - `parseInt`把字符串里的数值信息提取出来
 
-# 第11章：HTML5
+# 11. 第11章：HTML5
 
 - canvas
 - 音频和视频
 - 表单
 
-# 第12章：综合示例
+# 12. 第12章：综合示例
 
