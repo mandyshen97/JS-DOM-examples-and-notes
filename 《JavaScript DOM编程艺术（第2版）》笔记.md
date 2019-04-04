@@ -1,5 +1,7 @@
 《JavaScript DOM 编程艺术（第2版）》笔记
 
+[TOC]
+
 # 第1章：JavaScript 简史
 
 - JavaScript 的起源
